@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relax</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(/assets/sea.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        main {
+            width: 90%;
+            height: 85vh;
+            margin: 3% auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .town {
+            width: 350px;
+            height: 350px;
+           
+            padding: 10px auto;
+            background-color: #9ba0827a;
+            border-radius: 50%;
+            /* box-shadow: 2px 8px 5px #1ea075; */
+            font-size: 30px;
+            font-family: 'Poiret One', cursive;
+            color: #0e3b2c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .city {
+            font-weight: 600;
+            padding-bottom: 15px;
+}
+
+.hi{
+    
+            font-family: 'Poiret One', cursive;
+            color: #001810;
+            text-align: center;
+           margin-top: 10%;
+}
+h1{
+    font-weight: 900;
+}
+
+        .relax {
+            padding: 10px;
+            font-family: 'Poiret One', cursive;
+            background-color: #a5944a7a;
+            width: fit-content;
+            font-size: 25px;
+            font-weight: 800;
+            font-family: 'Poiret One', cursive;
+            color: #001810;
+        }
+
+        .bro {
+            display: grid;
+            align-items: flex-end;
+            justify-content: right;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <audio id="foobar" src="/assets/3d-zvuk-kriki-chaek-pod-shum-priboya.mp3" autoplay="autoplay" loop="loop"
+            preload="auto"> </audio>
+
+        <!-- погода -->
+
+        <div class="town">
+            <section>
+
+                <div class="city"></div>
+                <div class="humi"></div>
+            </section>
+            <div class="current">
+                <div class="temp"> <span class="tempValue"></span></div>
+                <div class="weather"></div>
+                <div class="feels_like"></div>
+                <div class="wind"></div>
+            </div>
+        </div>
+        <div class="hi">
+            <h1>Добро пожаловать на море!</h1>
+            <h2>Здесь можно услышать шум волн и позабыть о суете дня...</h2>
+        </div>
+
+        <div class="bro">
+            <div class="relax">
+                <p>Когда так много позади<br>
+                    всего, в особенности – горя,<br>
+                    поддержки чьей-нибудь не жди,<br>
+                    сядь в поезд, высадись у моря.<br>
+                    Оно обширнее. Оно<br>
+                    и глубже. Это превосходство –<br>
+                    не слишком радостное. Но<br>
+                    уж если чувствовать сиротство,<br>
+                    то лучше в тех местах, чей вид<br>
+                    волнует, нежели язвит.<br>
+                    <br>
+                    <br>
+                    И.Бродский <br>
+                    октябрь 1969, Коктебель</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="/weather.js"></script>
+</body>
+
+</html>

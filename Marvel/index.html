@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Супергерои!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: rgb(176, 125, 125);
+            background: radial-gradient(circle, rgba(176, 125, 125, 0.8463760504201681) 33%, rgba(176, 152, 51, 0.8519782913165266) 100%);
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            60%,
+            100% {
+                transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+                transform: translateY(-20px);
+            }
+
+            80% {
+                transform: translateY(-10px);
+                transform: translateY(-10px);
+            }
+        }
+
+        img {
+            width: 350px;
+            padding: 10px;
+        }
+
+        h1 {
+
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-family: 'Comfortaa', cursive;
+        }
+
+        h2,
+        p {
+            font-family: 'Comfortaa', cursive;
+            text-align: left;
+        }
+
+        .highlight {
+            font-weight: 800;
+            padding: 5px;
+            text-decoration: underline;
+
+        }
+
+        .cardHeroes {
+            width: 30%;
+            border: 3px solid rgba(176, 125, 125, 0.8463760504201681);
+            border-radius: 10%;
+            margin: 20px;
+            padding: 15px;
+            text-align: center;
+
+
+
+        }
+
+        .cardHeroes:hover {
+
+            background-color: rgba(241, 211, 211, 0.514);
+            -webkit-box-shadow: 9px 5px 10px 5px rgba(126, 122, 106, 0.852);
+            -moz-box-shadow: 9px 5px 10px 5px rgba(126, 122, 106, 0.852);
+            box-shadow: 9px 5px 10px 5px rgba(126, 122, 106, 0.852);
+            animation: bounce 1s;
+        }
+
+        .container {
+            background-color: rgba(199, 170, 55, 0.137);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <h1>Самое главное о самых главных.</h1>
+        <div class="container">
+
+        </div>
+
+        <script src="/Marvel/add.js"></script>
+
+    </body>
+
+</html>
